@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qpdown"
-version = "1.0.4"
+version = "1.0.6"
 authors = [
   { name="q16q", email="q16@q16.dev" },
 ]
@@ -27,4 +27,4 @@ Homepage = "https://github.com/q16q/qpdown"
 Issues = "https://github.com/q16q/qpdown/issues"
 
 [project.scripts]
-qpdown = "qpdown:main"
+qpdown = "qpdown:main_script"
