@@ -6,13 +6,7 @@ FFMPEG_HWACCEL_ARGS = [] # <- edit this to add hardware acceleration in ffmpeg (
 parser = argparse.ArgumentParser('qpDown')
 parser.add_argument('-i', '--input', action = 'store', required = True)
 parser.add_argument('-o', '--output', action = 'store', required = True)
-if len(sys.argv) > 0:
-    if sys.argv[0].endswith('.py'):
-        arguments = parser.parse_args(sys.argv[1:])
-    else:
-        arguments = parser.parse_args(sys.argv)
-else:
-    arguments = parser.parse_args(sys.argv)
+arguments = parser.parse_args(sys.argv[1:])
 
 # -- logging
 handler = colorlog.StreamHandler()
