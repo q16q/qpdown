@@ -1,4 +1,4 @@
-colorama==0.4.6
-colorlog==6.9.0
-Requests==2.32.3
-tqdm==4.67.1
+colorama
+colorlog
+requests
+tqdm

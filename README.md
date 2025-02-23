@@ -1,7 +1,7 @@
 # qpDown
 **qpDown** is a simple m3u8 playlist downloader written in python
 ## requirements
-- [`ffmpeg`](https://www.ffmpeg.org/download.html)
+- [ffmpeg](https://www.ffmpeg.org/download.html)
 ## installation
 if you're not on a windows machine, you should create a virtual environment and enter it before installing the requirements
 ```
@@ -21,3 +21,5 @@ python main.py
 ```
 python -m pyinstaller main.py --onefile
 ```
+## contact
+email: [q16@q16.dev](mailto://q16@q16.dev)

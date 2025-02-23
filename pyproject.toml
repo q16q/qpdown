@@ -1,0 +1,23 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qpdown"
+version = "1.0.0"
+authors = [
+  { name="q16q", email="q16@q16.dev" },
+]
+description = "a simple m3u8 playlist downloader written in python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/q16q/qpdown"
+Issues = "https://github.com/q16q/qpdown/issues"
