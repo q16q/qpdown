@@ -82,7 +82,7 @@ def get_hwaccel_params():
         return [] # disable hwaccel
 
 # -- main script
-def main_script():
+def main():
     if not arguments.input.startswith('http'):
         logger.fatal('input is not a link!')
         return 1
@@ -155,4 +155,4 @@ def main_script():
     logger.info('done!')
         
 if __name__ == '__main__':
-    sys.exit(main_script())
+    sys.exit(main())

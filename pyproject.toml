@@ -27,4 +27,4 @@ Homepage = "https://github.com/q16q/qpdown"
 Issues = "https://github.com/q16q/qpdown/issues"
 
 [project.scripts]
-qpdown = "qpdown:main_script"
+qpdown = "qpdown:main"
