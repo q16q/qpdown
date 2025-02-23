@@ -13,11 +13,11 @@ python -m pip install -r requirements.txt
 ## usage
 **from pypi:**
 ```
-python -m qpdown -i ... -o ...
+qpdown -i ... -o ...
 ```
 **from source:**
 ```
-python main.py
+python main.py -i ... -o ...
 ```
 ## building
 **requirements:**
