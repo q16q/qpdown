@@ -9,6 +9,9 @@ version = "1.0.2"
 authors = [
   { name="q16q", email="q16@q16.dev" },
 ]
+maintainers = [
+  { name="q16q", email="q16@q16.dev" }
+]
 description = "a simple m3u8 playlist downloader written in python"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -17,7 +20,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = {file = "LICENSE"}
+keywords = ["downloader", "m3u8", "playlist", "playlist-downloader"]
 
 [project.urls]
 Homepage = "https://github.com/q16q/qpdown"
 Issues = "https://github.com/q16q/qpdown/issues"
+
+[project.scripts]
+qpdown = "qpdown:main"
