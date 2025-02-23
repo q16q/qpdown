@@ -11,6 +11,11 @@ python -m pip install -r requirements.txt
 > [!WARNING]
 > to properly enable hwaccel on non-nvidia graphics card pc, please edit your ffmpeg hwaccel args on line 3 (main.py). you can google them for your os and gpu
 ## usage
+**from pypi:**
+```
+python -m qpdown -i ... -o ...
+```
+**from source:**
 ```
 python main.py
 ```
