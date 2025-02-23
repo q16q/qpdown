@@ -6,7 +6,13 @@ FFMPEG_HWACCEL_ARGS = [] # <- edit this to add hardware acceleration in ffmpeg (
 parser = argparse.ArgumentParser('qpDown')
 parser.add_argument('-i', '--input', action = 'store', required = True)
 parser.add_argument('-o', '--output', action = 'store', required = True)
-arguments = parser.parse_args(sys.argv[1:])
+if len(sys.argv) > 0:
+    if sys.argv[0].endswith('.py'):
+        arguments = parser.parse_args(sys.argv[1:])
+    else:
+        arguments = parser.parse_args(sys.argv)
+else:
+    arguments = parser.parse_args(sys.argv)
 
 # -- logging
 handler = colorlog.StreamHandler()
@@ -82,7 +88,7 @@ def get_hwaccel_params():
         return [] # disable hwaccel
 
 # -- main script
-def main():
+def main_script():
     if not arguments.input.startswith('http'):
         logger.fatal('input is not a link!')
         return 1
@@ -155,4 +161,4 @@ def main():
     logger.info('done!')
         
 if __name__ == '__main__':
-    sys.exit(main())
+    sys.exit(main_script())
