@@ -27,4 +27,4 @@ python main.py -i ... -o ...
 python -m pyinstaller main.py --onefile
 ```
 ## contact
-email: [q16@q16.dev](mailto://q16@q16.dev)
+email: [q16@q16.dev](mailto:q16@q16.dev)
